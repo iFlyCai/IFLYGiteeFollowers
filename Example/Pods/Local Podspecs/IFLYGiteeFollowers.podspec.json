@@ -1,0 +1,29 @@
+{
+  "name": "IFLYGiteeFollowers",
+  "version": "0.0.1",
+  "summary": "Fetch and display Gitee followers list",
+  "description": "A lightweight library to fetch the followers list of a Gitee user,\nwith support for pagination, error handling, and displaying in UI.",
+  "homepage": "https://github.com/iFlyCai/IFLYGiteeFollowers",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "iFlyCai": "zhangchengcai3615@126.com"
+  },
+  "source": {
+    "git": "https://github.com/iFlyCai/IFLYGiteeFollowers.git",
+    "tag": "0.0.1"
+  },
+  "platforms": {
+    "ios": "16.0"
+  },
+  "swift_versions": "5.7",
+  "module_name": "IFLYGiteeFollowers",
+  "static_framework": true,
+  "source_files": "IFLYGiteeFollowers/Classes/**/*.{swift,h}",
+  "dependencies": {
+    "IFLYCommonKit": []
+  },
+  "swift_version": "5.7"
+}

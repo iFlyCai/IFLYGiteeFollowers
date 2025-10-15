@@ -1,0 +1,6 @@
+framework module IFLYUtilities {
+  umbrella header "IFLYUtilities-umbrella.h"
+
+  export *
+  module * { export * }
+}

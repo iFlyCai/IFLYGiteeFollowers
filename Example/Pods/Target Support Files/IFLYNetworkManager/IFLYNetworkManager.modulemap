@@ -1,0 +1,6 @@
+framework module IFLYNetworkManager {
+  umbrella header "IFLYNetworkManager-umbrella.h"
+
+  export *
+  module * { export * }
+}

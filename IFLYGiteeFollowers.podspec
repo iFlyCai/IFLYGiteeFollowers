@@ -1,42 +1,32 @@
-#
-# Be sure to run `pod lib lint IFLYGiteeFollowers.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
   s.name             = 'IFLYGiteeFollowers'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of IFLYGiteeFollowers.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.version          = '0.0.1'
+  s.summary          = 'Fetch and display Gitee followers list'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+A lightweight library to fetch the followers list of a Gitee user,
+with support for pagination, error handling, and displaying in UI.
+  DESC
 
   s.homepage         = 'https://github.com/iFlyCai/IFLYGiteeFollowers'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'iFlyCai' => 'zhangchengcai3615@126.com' }
   s.source           = { :git => 'https://github.com/iFlyCai/IFLYGiteeFollowers.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '16.0'
+  s.swift_version     = '5.7'
+  # 如果 module_name 和 static_framework 没有特别用途，可以去掉或改为合理名称
+   s.module_name = 'IFLYGiteeFollowers'
+   s.static_framework = true
 
-  s.source_files = 'IFLYGiteeFollowers/Classes/**/*'
-  
+  # 源码文件路径，指定 .swift/.h 等需要被包含的源文件
+  s.source_files = 'IFLYGiteeFollowers/Classes/**/*.{swift,h}'
+
+  # 如果你有资源文件（xib、图片、json 等），可以配置 resources 或 resource_bundles
   # s.resource_bundles = {
-  #   'IFLYGiteeFollowers' => ['IFLYGiteeFollowers/Assets/*.png']
+  #   'IFLYGiteeFollowersResources' => ['IFLYGiteeFollowers/Assets/**/*']
   # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  # 添加依赖
+  s.dependency 'IFLYCommonKit'
 end

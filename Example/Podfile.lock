@@ -1,0 +1,140 @@
+PODS:
+  - Alamofire (5.10.2)
+  - Differentiator (5.0.0)
+  - IFLYCommonKit (1.5.25):
+    - IFLYCommonKit/Core (= 1.5.25)
+    - IFLYCommonKit/IFLYBase (= 1.5.25)
+    - IFLYCommonKit/IFLYUI (= 1.5.25)
+    - IFLYCommonKit/Manager (= 1.5.25)
+  - IFLYCommonKit/Core (1.5.25):
+    - IFLYGiteeUIStyleKit
+    - IFLYNetworkManager
+    - IFLYOcticons
+    - IFLYUtilities
+    - MJRefresh
+    - RxDataSources
+    - SDWebImage
+    - SnapKit
+    - YYText
+  - IFLYCommonKit/IFLYBase (1.5.25):
+    - IFLYCommonKit/IFLYBase/viewController (= 1.5.25)
+    - RTRootNavigationController (~> 0.8.1)
+  - IFLYCommonKit/IFLYBase/viewController (1.5.25):
+    - IFLYCommonKit/Core
+    - RTRootNavigationController (~> 0.8.1)
+  - IFLYCommonKit/IFLYUI (1.5.25):
+    - IFLYCommonKit/Core
+    - IFLYCommonKit/IFLYUI/Common (= 1.5.25)
+    - IFLYCommonKit/IFLYUI/IFLYRefresh (= 1.5.25)
+    - IFLYCommonKit/IFLYUI/ProgressHUD (= 1.5.25)
+    - IFLYCommonKit/IFLYUI/Toast (= 1.5.25)
+    - Toast (~> 4.1.2)
+  - IFLYCommonKit/IFLYUI/Common (1.5.25):
+    - IFLYCommonKit/Core
+    - Toast (~> 4.1.2)
+  - IFLYCommonKit/IFLYUI/IFLYRefresh (1.5.25):
+    - IFLYCommonKit/Core
+    - MJRefresh (~> 3.7.9)
+    - Toast (~> 4.1.2)
+  - IFLYCommonKit/IFLYUI/ProgressHUD (1.5.25):
+    - IFLYCommonKit/Core
+    - Toast (~> 4.1.2)
+  - IFLYCommonKit/IFLYUI/Toast (1.5.25):
+    - IFLYCommonKit/Core
+    - Toast (~> 4.1.2)
+  - IFLYCommonKit/Manager (1.5.25)
+  - IFLYGiteeFollowers (0.0.1):
+    - IFLYCommonKit
+  - IFLYGiteeUIStyleKit (1.1.04)
+  - IFLYNetworkManager (1.1.55):
+    - Alamofire (~> 5.6)
+    - KeychainAccess
+  - IFLYOcticons (1.1.04):
+    - Macaw
+  - IFLYUtilities (0.0.4):
+    - IFLYUtilities/IFLYFoundation (= 0.0.4)
+    - IFLYUtilities/IFLYUIKit (= 0.0.4)
+  - IFLYUtilities/IFLYFoundation (0.0.4)
+  - IFLYUtilities/IFLYUIKit (0.0.4)
+  - KeychainAccess (4.2.2)
+  - Macaw (11.9.12):
+    - SWXMLHash
+  - MJRefresh (3.7.9)
+  - RTRootNavigationController (0.8.1):
+    - RTRootNavigationController/Core (= 0.8.1)
+  - RTRootNavigationController/Core (0.8.1)
+  - RxCocoa (6.9.0):
+    - RxRelay (= 6.9.0)
+    - RxSwift (= 6.9.0)
+  - RxDataSources (5.0.0):
+    - Differentiator (~> 5.0)
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
+  - RxRelay (6.9.0):
+    - RxSwift (= 6.9.0)
+  - RxSwift (6.9.0)
+  - SDWebImage (5.21.3):
+    - SDWebImage/Core (= 5.21.3)
+  - SDWebImage/Core (5.21.3)
+  - SnapKit (5.7.1)
+  - SWXMLHash (9.1.3)
+  - Toast (4.1.2)
+  - YYText (1.0.8)
+
+DEPENDENCIES:
+  - IFLYGiteeFollowers (from `../`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - Differentiator
+    - KeychainAccess
+    - MJRefresh
+    - RTRootNavigationController
+    - RxCocoa
+    - RxDataSources
+    - RxRelay
+    - RxSwift
+    - SDWebImage
+    - SnapKit
+  https://github.com/iFlyCai/IFLYSpecs.git:
+    - IFLYCommonKit
+    - IFLYGiteeUIStyleKit
+    - IFLYNetworkManager
+    - IFLYOcticons
+    - IFLYUtilities
+    - Macaw
+    - SWXMLHash
+    - Toast
+    - YYText
+
+EXTERNAL SOURCES:
+  IFLYGiteeFollowers:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Alamofire: 7193b3b92c74a07f85569e1a6c4f4237291e7496
+  Differentiator: e8497ceab83c1b10ca233716d547b9af21b9344d
+  IFLYCommonKit: 68434897fc0acde61659006bf3d026f3c2f0a285
+  IFLYGiteeFollowers: 79c734a625ee27c4b707726e9210a56cb76001a6
+  IFLYGiteeUIStyleKit: 9f4c19e19dc494830ef7cc92063d0d8df7877495
+  IFLYNetworkManager: ac7b23cf9d1da34c6cd9bc90fcc71a6a68db1cd9
+  IFLYOcticons: e317d265479c8ac5fe279d9edff09ef2c04bbbb8
+  IFLYUtilities: 95a868b9afaffe80570cfe7cf3022b1d7e383afd
+  KeychainAccess: c0c4f7f38f6fc7bbe58f5702e25f7bd2f65abf51
+  Macaw: ef2772774fd72aadcad5837f193a3e5f3ce1664b
+  MJRefresh: ff9e531227924c84ce459338414550a05d2aea78
+  RTRootNavigationController: ca443783baf6ff65a70c4d21ce0eedbbc1fec1fe
+  RxCocoa: ac16414696ae706516be3e1ab00fcce5bdc9be8a
+  RxDataSources: aa47cc1ed6c500fa0dfecac5c979b723542d79cf
+  RxRelay: 6b0c930e5cef57d5fe2032571e5e65b78e3cbdb1
+  RxSwift: 31649ace6aceeb422e16ff71c60804f9c3281ed9
+  SDWebImage: 16309af6d214ba3f77a7c6f6fdda888cb313a50a
+  SnapKit: d612e99e678a2d3b95bf60b0705ed0a35c03484a
+  SWXMLHash: e6e7f9838518e6747716e11e2eb3a409c1637b14
+  Toast: e90045b530bd031a034a7c6827edab321d34e496
+  YYText: 372c4007c72ad1fd7a53f92d3fc000641a312934
+
+PODFILE CHECKSUM: eb54c075452876e9b1064592255aae8b5bb0e28b
+
+COCOAPODS: 1.16.2

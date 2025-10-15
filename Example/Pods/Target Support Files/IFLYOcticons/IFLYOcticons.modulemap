@@ -1,0 +1,6 @@
+framework module IFLYOcticons {
+  umbrella header "IFLYOcticons-umbrella.h"
+
+  export *
+  module * { export * }
+}
