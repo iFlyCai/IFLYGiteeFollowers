@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'IFLYGiteeFollowers'
-  s.version          = '0.0.2'
+  s.version          = '0.0.3'
   s.summary          = 'Fetch and display Gitee followers list'
 
   s.description      = <<-DESC

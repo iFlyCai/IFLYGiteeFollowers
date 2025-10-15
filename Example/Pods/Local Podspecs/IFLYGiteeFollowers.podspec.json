@@ -1,6 +1,6 @@
 {
   "name": "IFLYGiteeFollowers",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "summary": "Fetch and display Gitee followers list",
   "description": "A lightweight library to fetch the followers list of a Gitee user,\nwith support for pagination, error handling, and displaying in UI.",
   "homepage": "https://github.com/iFlyCai/IFLYGiteeFollowers",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/iFlyCai/IFLYGiteeFollowers.git",
-    "tag": "0.0.2"
+    "tag": "0.0.3"
   },
   "platforms": {
     "ios": "16.0"

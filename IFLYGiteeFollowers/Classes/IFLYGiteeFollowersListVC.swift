@@ -17,7 +17,7 @@ open class IFLYGiteeFollowersListVC: IFLYCommonTVC<GiteeUser> {
         super.viewDidLoad()
         
         // 设置导航栏标题为"关注者"
-        title = "关注者"
+        title = "粉丝(关注我的人)"
         // 注册自定义单元格
         tableView.register(IFLYFollowersCell.self, forCellReuseIdentifier: followerCellIdentifier)
         // 设置数据更新回调
@@ -180,67 +180,6 @@ open class IFLYFollowersCell: UITableViewCell {
         return view
     }()
 
-    lazy var followersCountLabel: UILabel = {
-        let label = UILabel()
-        label.font = UIFont.pingfangMedium(withSize: 12)
-        label.textColor = AppColors.labelColor3
-        return label
-    }()
-
-    lazy var followersLabel: UILabel = {
-        let label = UILabel()
-        label.font = UIFont.pingfangRegular(withSize: 12)
-        label.textColor = AppColors.labelColor3
-        label.text = "关注者"
-        return label
-    }()
-
-    // 关注数量
-    lazy var followingStatView: UIView = {
-        let view = UIStackView()
-        view.axis = .horizontal
-        view.spacing = 4
-        return view
-    }()
-
-    lazy var followingCountLabel: UILabel = {
-        let label = UILabel()
-        label.font = UIFont.pingfangMedium(withSize: 12)
-        label.textColor = AppColors.labelColor3
-        return label
-    }()
-
-    lazy var followingLabel: UILabel = {
-        let label = UILabel()
-        label.font = UIFont.pingfangRegular(withSize: 12)
-        label.textColor = AppColors.labelColor3
-        label.text = "关注"
-        return label
-    }()
-
-    // 仓库数量
-    lazy var reposStatView: UIView = {
-        let view = UIStackView()
-        view.axis = .horizontal
-        view.spacing = 4
-        return view
-    }()
-
-    lazy var reposCountLabel: UILabel = {
-        let label = UILabel()
-        label.font = UIFont.pingfangMedium(withSize: 12)
-        label.textColor = AppColors.labelColor3
-        return label
-    }()
-
-    lazy var reposLabel: UILabel = {
-        let label = UILabel()
-        label.font = UIFont.pingfangRegular(withSize: 12)
-        label.textColor = AppColors.labelColor3
-        label.text = "仓库"
-        return label
-    }()
-
     // 关注按钮
     lazy var followButton: UIButton = {
         let button = UIButton(type: .system)
@@ -313,31 +252,8 @@ open class IFLYFollowersCell: UITableViewCell {
             make.bottom.equalToSuperview().offset(-15)
         }
 
-        // 添加关注者统计
-        statsContainerView.addSubview(followersStatView)
-        (followersStatView as! UIStackView).addArrangedSubview(followersCountLabel)
-        (followersStatView as! UIStackView).addArrangedSubview(followersLabel)
-        followersStatView.snp.makeConstraints { make in
-            make.left.top.bottom.equalToSuperview()
-        }
 
-        // 添加关注统计
-        statsContainerView.addSubview(followingStatView)
-        (followingStatView as! UIStackView).addArrangedSubview(followingCountLabel)
-        (followingStatView as! UIStackView).addArrangedSubview(followingLabel)
-        followingStatView.snp.makeConstraints { make in
-            make.left.equalTo(followersStatView.snp.right).offset(20)
-            make.top.bottom.equalToSuperview()
-        }
 
-        // 添加仓库统计
-        statsContainerView.addSubview(reposStatView)
-        (reposStatView as! UIStackView).addArrangedSubview(reposCountLabel)
-        (reposStatView as! UIStackView).addArrangedSubview(reposLabel)
-        reposStatView.snp.makeConstraints { make in
-            make.left.equalTo(followingStatView.snp.right).offset(20)
-            make.top.bottom.equalToSuperview()
-        }
 
         // 添加关注按钮
         containerView.addSubview(followButton)
@@ -369,11 +285,6 @@ open class IFLYFollowersCell: UITableViewCell {
             bioLabel.text = nil
             bioLabel.isHidden = true
         }
-        
-        // 设置统计数据
-        followersCountLabel.text = "\(user.followers ?? 0)"
-        followingCountLabel.text = "\(user.following ?? 0)"
-        reposCountLabel.text = "\(user.publicRepos ?? 0)"
         
         // 加载用户头像
         if let avatarURLString = user.avatarUrl, let url = URL(string: avatarURLString) {

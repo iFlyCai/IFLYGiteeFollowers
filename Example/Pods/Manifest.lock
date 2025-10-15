@@ -43,7 +43,7 @@ PODS:
     - IFLYCommonKit/Core
     - Toast (~> 4.1.2)
   - IFLYCommonKit/Manager (1.5.25)
-  - IFLYGiteeFollowers (0.0.2):
+  - IFLYGiteeFollowers (0.0.3):
     - IFLYCommonKit
   - IFLYGiteeUIStyleKit (1.1.04)
   - IFLYNetworkManager (1.1.56):
@@ -116,7 +116,7 @@ SPEC CHECKSUMS:
   Alamofire: 7193b3b92c74a07f85569e1a6c4f4237291e7496
   Differentiator: e8497ceab83c1b10ca233716d547b9af21b9344d
   IFLYCommonKit: 68434897fc0acde61659006bf3d026f3c2f0a285
-  IFLYGiteeFollowers: 8080cc516783568784db746fd62f0ece9461162e
+  IFLYGiteeFollowers: 9e219bece7ece940e8dd9fa342679c374df5e78e
   IFLYGiteeUIStyleKit: 9f4c19e19dc494830ef7cc92063d0d8df7877495
   IFLYNetworkManager: 98f86593fde6d2443173e3df09b698409ea5c73c
   IFLYOcticons: e317d265479c8ac5fe279d9edff09ef2c04bbbb8
